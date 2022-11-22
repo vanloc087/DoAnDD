@@ -3,11 +3,11 @@ import React from "react";
 import MaterialIcons from "react-native-vector-icons/AntDesign";
 import { useNavigation } from "@react-navigation/native";
 
-const GoBackComponent = () => {
+const GoBackComponent = ({title}) => {
   const navigation = useNavigation();
   return (
     <View style={styles.goBackComponent}>
-      <Text style={styles.textTitle}>Đăng Nhập</Text>
+      <Text style={styles.textTitle}>{title}</Text>
       <TouchableOpacity
         style={{ width: 45 }}
         onPress={() => {
