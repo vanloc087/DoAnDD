@@ -7,7 +7,7 @@ import {
   Image,
   TextInput,
   StatusBar,
-  Alert
+  Alert,
 } from "react-native";
 import React, { useState } from "react";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
@@ -18,17 +18,17 @@ import GoBackComponent from "../../components/GoBackComponent";
 
 const LoginScreen = () => {
   const navigation = useNavigation();
-  const [userName, setUserName] = useState('');
-  const [password, setPassword] = useState('');
+  const [userName, setUserName] = useState("");
+  const [password, setPassword] = useState("");
 
   const LoginOnPress = () => {
-    for(let i = 0; i < Data.length; i++ ){
-      if(Data[i].name == userName && Data[i].password == password){
-        navigation.navigate('HomeScreen');
+    for (let i = 0; i < Data.length; i++) {
+      if (Data[i].name == userName && Data[i].password == password) {
+        navigation.navigate("HomeScreen", userName);
         return;
       }
     }
-    Alert.alert('Thông báo!', 'Đăng nhập thất bại.');
+    Alert.alert("Thông báo!", "Đăng nhập thất bại.");
   };
 
   return (
@@ -43,12 +43,14 @@ const LoginScreen = () => {
             size={27}
             color={"gray"}
           />
-          <TextInput 
-              style={styles.inputLogin} 
-              placeholder="Tên đăng nhập"
-              value={userName}
-              onChangeText={(text) => {setUserName(text)}}
-              />
+          <TextInput
+            style={styles.inputLogin}
+            placeholder="Tên đăng nhập"
+            value={userName}
+            onChangeText={(text) => {
+              setUserName(text);
+            }}
+          />
         </View>
 
         <View style={styles.inputComponent}>
@@ -58,15 +60,23 @@ const LoginScreen = () => {
             size={27}
             color={"gray"}
           />
-          <TextInput 
-              style={styles.inputLogin} 
-              secureTextEntry={true} 
-              placeholder="Mật khẩu"
-              value={password}
-              onChangeText={(text) => {setPassword(text)}} />
+          <TextInput
+            style={styles.inputLogin}
+            secureTextEntry={true}
+            placeholder="Mật khẩu"
+            value={password}
+            onChangeText={(text) => {
+              setPassword(text);
+            }}
+          />
         </View>
 
-        <TouchableOpacity style={styles.buttonLogin} onPress={()=>{LoginOnPress()}}>
+        <TouchableOpacity
+          style={styles.buttonLogin}
+          onPress={() => {
+            LoginOnPress();
+          }}
+        >
           <Text style={styles.textButton}>Đăng Nhập</Text>
         </TouchableOpacity>
       </View>
@@ -74,7 +84,12 @@ const LoginScreen = () => {
       <View style={{ marginTop: 30 }}>
         <View style={styles.otherComponent}>
           <Text>Bạn chưa có tài khoản?</Text>
-          <TouchableOpacity style={styles.registerButton} onPress={()=>{navigation.navigate('RegisterScreen')}}>
+          <TouchableOpacity
+            style={styles.registerButton}
+            onPress={() => {
+              navigation.navigate("RegisterScreen");
+            }}
+          >
             <Text style={styles.textRegister}> Đăng ký.</Text>
           </TouchableOpacity>
         </View>
@@ -86,7 +101,7 @@ const LoginScreen = () => {
         </View>
       </View>
 
-      <GoBackComponent title='Đăng nhập'/>
+      <GoBackComponent title="Đăng nhập" />
       <StatusBar />
     </SafeAreaView>
   );

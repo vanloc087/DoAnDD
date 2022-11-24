@@ -8,11 +8,11 @@ listSanPham = [
     mauSac: ["blue", "white"],
     soLuong: 900,
     moTa: "Xiaomi đã trang bị cho máy cụm 3 camera sau gồm camera chính 108 MP, camera góc rộng có độ phân giải 8 MP cùng camera telemacro 5 MP kết hợp cùng phần cứng bên trong cho khả năng lấy nét, thu sáng và zoom cực tốt để cho ra những bức ảnh chi tiết dù bạn chụp gần hay chụp xa.",
-    hinhAnh: {
-      default: require("../assets/xiaomi-11t-blue.jpg"),
-      blue: require("../assets/xiaomi-11t-blue.jpg"),
-      white: require("../assets/xiaomi-11t-white.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/xiaomi-11t-blue.jpg"),
+      require("../assets/xiaomi-11t-blue.jpg"),
+      require("../assets/xiaomi-11t-white.jpg"),
+    ],
     hangSanXuat: "Xiaomi",
   },
   {
@@ -25,10 +25,10 @@ listSanPham = [
     mauSac: ["blue", "gray"],
     soLuong: 1010,
     moTa: "Samsung Galaxy Z Flip4 sử dụng ngôn ngữ thiết kế vuông vắn khi được tạo hình với các cạnh và hai mặt đều vát phẳng. Với bộ khung sáng bóng cùng màu sắc trẻ trung ở mặt lưng giúp bạn có thể nổi bật hơn ở những nơi đông người khi cầm nắm sử dụng trên tay.",
-    hinhAnh: {
-      blue: require("../assets/samsung-galaxy-z-flip4-blue.jpg"),
-      gray: require("../assets/samsung-galaxy-z-flip4-gray.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/samsung-galaxy-z-flip4-blue.jpg"),
+      require("../assets/samsung-galaxy-z-flip4-gray.jpg"),
+    ],
     hangSanXuat: "Sam Sung",
   },
   {
@@ -41,10 +41,10 @@ listSanPham = [
     mauSac: ["blue", "black"],
     soLuong: 1245,
     moTa: "Realme C33 có một vẻ ngoài vuông vức bắt trend khá giống với phiên bản Realme C35, bộ khung và mặt lưng được làm từ chất liệu nhựa giúp cho điện thoại có khả năng phản quang bắt mắt.",
-    hinhAnh: {
-      blue: require("../assets/realme-c33-blue.jpg"),
-      black: require("../assets/realme-c33-black.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/realme-c33-blue.jpg"),
+      require("../assets/realme-c33-black.jpg"),
+    ],
     hangSanXuat: "Xiaomi",
   },
   {
@@ -57,10 +57,10 @@ listSanPham = [
     mauSac: ["black", "purple"],
     soLuong: 550,
     moTa: "Thừa hưởng phong cách thiết kế tối giản, hiện đại của thế hệ iPhone 13 series, iPhone 14 Pro vẫn sở hữu cạnh viền vát phẳng và hệ thống camera được bố trí một cách hợp lý trong một cụm hình vuông. Giờ đây cụm tai thỏ quen thuộc đã được loại bỏ và thay thế vào đó là hình notch độc đáo dễ nhận diện.",
-    hinhAnh: {
-      black: require("../assets/iphone-14-pro-black.jpg"),
-      purple: require("../assets/iphone-14-pro-purple.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/iphone-14-pro-black.jpg"),
+      require("../assets/iphone-14-pro-purple.jpg"),
+    ],
     hangSanXuat: "Apple",
   },
   {
@@ -73,10 +73,10 @@ listSanPham = [
     mauSac: ["black", "blue"],
     soLuong: 1200,
     moTa: "Với kiểu thiết kế tràn viền, cho phép OPPO A54 có một màn hình siêu lớn nhưng vẫn vừa vặn trong lòng bàn tay, phù hợp cho mọi hoạt động hàng ngày của người dùng trẻ năng động.",
-    hinhAnh: {
-      blue: require("../assets/oppo-a54-blue.jpg"),
-      black: require("../assets/oppo-a54-black.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/oppo-a54-blue.jpg"),
+      require("../assets/oppo-a54-black.jpg"),
+    ],
     hangSanXuat: "Oppo",
   },
   {
@@ -89,10 +89,10 @@ listSanPham = [
     mauSac: ["yellow", "black"],
     soLuong: 1234,
     moTa: "Cung cấp năng lượng cho C40 là viên pin khủng với dung lượng 6000 mAh. Mình khá bất ngờ với thời gian sử dụng liên tục của điện thoại khi đạt đến hơn 10 tiếng* cho các tác vụ cơ bản như chơi game, xem phim, mạng xã hội. Đây quả thật là một chiếc điện thoại pin khủng để cho bạn thời gian trải nghiệm gần như 1 ngày với mọi tác vụ.",
-    hinhAnh: {
-      yellow: require("../assets/poco-c40-yellow.jpg"),
-      black: require("../assets/poco-c40-yellow.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/poco-c40-yellow.jpg"),
+      require("../assets/poco-c40-yellow.jpg"),
+    ],
     hangSanXuat: "Oppo",
   },
   {
@@ -105,10 +105,10 @@ listSanPham = [
     mauSac: ["black", "blue"],
     soLuong: 130,
     moTa: "Trang bị trong máy là bộ vi xử lý Snapdragon 680 8 nhân với mức xung nhịp tối đa lên đến 2.4 GHz, cho ra trải nghiệm theo mình đánh giá là khá mượt mà, thao tác công việc hàng ngày như nhắn tin, lướt web nhanh chóng, không thấy xuất hiện tình trạng giật lag.",
-    hinhAnh: {
-      blue: require("../assets/samsung-galaxy-a23-blue.jpg"),
-      black: require("../assets/samsung-galaxy-a23-black.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/samsung-galaxy-a23-blue.jpg"),
+      require("../assets/samsung-galaxy-a23-black.jpg"),
+    ],
     hangSanXuat: "Sam Sung",
   },
   {
@@ -121,10 +121,10 @@ listSanPham = [
     mauSac: ["black", "white"],
     soLuong: 12,
     moTa: "Apple đã chính thức trình làng bộ 3 siêu phẩm iPhone 11, trong đó phiên bản iPhone 11 64GB có mức giá rẻ nhất nhưng vẫn được nâng cấp mạnh mẽ như iPhone Xr ra mắt trước đó.",
-    hinhAnh: {
-      black: require("../assets/iphone-11-black.jpg"),
-      white: require("../assets/iphone-11-white.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/iphone-11-black.jpg"),
+      require("../assets/iphone-11-white.jpg"),
+    ],
     hangSanXuat: "Apple",
   },
   {
@@ -137,10 +137,10 @@ listSanPham = [
     mauSac: ["green", "black"],
     soLuong: 521,
     moTa: "Realme C21-Y có thiết kế nguyên khối với mặt lưng và khung viền làm tự nhựa tuy không thực sự cao cấp nhưng vẫn mang đến sự cứng cáp, độ hoàn thiện tốt trong tầm giá của sản phẩm. ",
-    hinhAnh: {
-      blue: require("../assets/realme-c21-blue.jpg"),
-      black: require("../assets/realme-c21-black.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/realme-c21-blue.jpg"),
+      require("../assets/realme-c21-black.jpg"),
+    ],
     hangSanXuat: "Xiaomi",
   },
   {
@@ -153,9 +153,7 @@ listSanPham = [
     mauSac: ["green"],
     soLuong: 13,
     moTa: "Nokia C30 có thiết kế không quá khác biệt so với thế hệ Nokia C20. Với các góc được bo tròn hoàn hảo cùng logo Nokia nổi bật phía viền dưới màn hình, được chế tác hoàn toàn vừa vặn trong lòng bàn tay của bạn.",
-    hinhAnh: {
-      green: require("../assets/nokia-c30-green.jpg"),
-    },
+    hinhAnh: [require("../assets/nokia-c30-green.jpg")],
     hangSanXuat: "Nokia",
   },
   {
@@ -168,10 +166,10 @@ listSanPham = [
     mauSac: ["back", "yellow"],
     soLuong: 120,
     moTa: "Điện thoại OPPO A có màn hình giọt nước ở mặt trước. Khung viền còn được vát phẳng tạo cảm giác sang trọng khi cầm trên tay. Thiết bị được giới thiệu với hai màu sắc trẻ trung: Glowing Green và Glowing Black.",
-    hinhAnh: {
-      black: require("../assets/oppo-a57-4g-black.jpg"),
-      yellow: require("../assets/oppo-a57-128gb-yellow.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/oppo-a57-4g-black.jpg"),
+      require("../assets/oppo-a57-128gb-yellow.jpg"),
+    ],
     hangSanXuat: "Oppo",
   },
   {
@@ -184,10 +182,10 @@ listSanPham = [
     mauSac: ["blue", "white"],
     soLuong: 200,
     moTa: "Con chip Apple A15 Bionic siêu mạnh được sản xuất trên quy trình 5 nm giúp iPhone 13 đạt hiệu năng ấn tượng, với CPU nhanh hơn 50%, GPU nhanh hơn 30% so với các đối thủ trong cùng phân khúc.",
-    hinhAnh: {
-      blue: require("../assets/iphone-13-blue.jpg"),
-      white: require("../assets/iphone-13-white.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/iphone-13-blue.jpg"),
+      require("../assets/iphone-13-white.jpg"),
+    ],
     hangSanXuat: "Apple",
   },
   {
@@ -200,10 +198,10 @@ listSanPham = [
     mauSac: ["black", "white"],
     soLuong: 120,
     moTa: "Apple đã trang bị con chip mới nhất của hãng (tính đến 11/2020) cho iPhone 12 đó là A14 Bionic, được sản xuất trên tiến trình 5 nm với hiệu suất ổn định hơn so với chip A13 được trang bị trên phiên bản tiền nhiệm iPhone 11.",
-    hinhAnh: {
-      black: require("../assets/iphone-12-black.jpg"),
-      white: require("../assets/iphone-12-white.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/iphone-12-black.jpg"),
+      require("../assets/iphone-12-white.jpg"),
+    ],
     hangSanXuat: "Apple",
   },
   {
@@ -216,10 +214,10 @@ listSanPham = [
     mauSac: ["blue", "white"],
     soLuong: 120,
     moTa: "Galaxy A33 có cạnh viền được chế tạo từ nhựa nhằm tối ưu khối lượng, mang lại cảm giác cầm nắm nhẹ nhàng, các cạnh được bo cong mềm mại giúp mình sử dụng lâu dài mà không thấy xuất hiện tình trạng cấn tay.",
-    hinhAnh: {
-      blue: require("../assets/samsung-galaxy-a33-blue.jpg"),
-      white: require("../assets/samsung-galaxy-a33-white.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/samsung-galaxy-a33-blue.jpg"),
+      require("../assets/samsung-galaxy-a33-white.jpg"),
+    ],
     hangSanXuat: "Sam Sung",
   },
   {
@@ -232,10 +230,10 @@ listSanPham = [
     mauSac: ["black", "yellow"],
     soLuong: 210,
     moTa: "Vivo V25 sở hữu cho mình những màu sắc hết sức trẻ trung và hiện đại, không chỉ mang đến nhiều sự lựa chọn hơn cho người dùng mà điều này còn đem lại cái nhìn tươi mới năng động hơn khi cầm nắm sử dụng.",
-    hinhAnh: {
-      black: require("../assets/vivo-v25-black.jpg"),
-      yellow: require("../assets/vivo-v25-yellow.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/vivo-v25-black.jpg"),
+      require("../assets/vivo-v25-yellow.jpg"),
+    ],
     hangSanXuat: "Vivo",
   },
   {
@@ -248,10 +246,10 @@ listSanPham = [
     mauSac: ["black", "yellow"],
     soLuong: 120,
     moTa: "Cảm nhận đầu tiên của mình khi trên tay chiếc OPPO Reno8 Z 5G là máy có thiết kế rất đẹp, từ màu sắc cho đến cách tạo hình đều làm mình hài lòng. Trong lần ra mắt lần này thì máy có 2 phiên bản màu sắc đó là vàng đồng và đen, trên tay mình đây đang là bản màu vàng đồng.",
-    hinhAnh: {
-      black: require("../assets/oppo-reno8-z-5g-yellow.jpg"),
-      yellow: require("../assets/oppo-reno8-z-5g-yellow.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/oppo-reno8-z-5g-yellow.jpg"),
+      require("../assets/oppo-reno8-z-5g-yellow.jpg"),
+    ],
     hangSanXuat: "",
   },
   {
@@ -264,10 +262,10 @@ listSanPham = [
     mauSac: ["gray", "silver"],
     soLuong: 12,
     moTa: "Máy tính bảng Lenovo Tab M8 có thiết kế cao cấp nhờ mặt lưng được làm bằng chất liệu nhựa nguyên khối, chắc chắn cho cảm giác cầm nắm vô cùng thích.",
-    hinhAnh: {
-      gray: require("../assets/lenovo-tab-m8-gray.jpg"),
-      silver: require("../assets/lenovo-tab-m8-silver.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/lenovo-tab-m8-gray.jpg"),
+      require("../assets/lenovo-tab-m8-silver.jpg"),
+    ],
     hangSanXuat: "Lenovo",
   },
   {
@@ -280,10 +278,10 @@ listSanPham = [
     mauSac: ["black", "green"],
     soLuong: 1000,
     moTa: "Máy tính bảng Alcatel 3T8 mỏng nhẹ với trọng lượng 290 g, là người bạn lý tưởng khi bạn di chuyển. Màu sắc tinh tế cùng lớp nhám mờ hoàn thiện đặc biệt giúp bạn trông đẹp mắt ở bất cứ đâu.",
-    hinhAnh: {
-      black: require("../assets/alcatel-black.jpg"),
-      green: require("../assets/alcatel-green.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/alcatel-black.jpg"),
+      require("../assets/alcatel-green.jpg"),
+    ],
     hangSanXuat: "Alcatel",
   },
   {
@@ -296,9 +294,7 @@ listSanPham = [
     mauSac: ["blue"],
     soLuong: 121,
     moTa: "Máy có thiết kế cứng cáp với mặt lưng được hoàn thiện từ kim loại mang đến cái nhìn sang trọng và đẳng cấp hơn trên một chiếc tablet, mặt lưng cũng được gia công hoàn thiện mờ giúp hạn chế bám dấu vân tay trong quá trình sử dụng hàng ngày.",
-    hinhAnh: {
-      blue: require("../assets/nokia-t20-blue.jpg"),
-    },
+    hinhAnh: [require("../assets/nokia-t20-blue.jpg")],
     hangSanXuat: "Nokia",
   },
   {
@@ -311,10 +307,10 @@ listSanPham = [
     mauSac: ["green", "black"],
     soLuong: 21,
     moTa: "Với lối thiết kế nguyên khối (unibody) cùng các cạnh được tạo dáng vuông vắn khiến cho Samsung Galaxy Tab S7 FE WiFi trở nên sang trọng khi cầm nắm trên tay bởi sự đơn giản và tinh tế trên một máy tính bảng chỉ nhẹ 610 g và mỏng 6.3 mm.",
-    hinhAnh: {
-      green: require("../assets/samsung-galaxy-tab-s7-fe-green.jpg"),
-      black: require("../assets/samsung-galaxy-tab-s7-fe-wifi-blackjpg.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/samsung-galaxy-tab-s7-fe-green.jpg"),
+      require("../assets/samsung-galaxy-tab-s7-fe-wifi-blackjpg.jpg"),
+    ],
     hangSanXuat: "Sam Sung",
   },
   {
@@ -327,9 +323,7 @@ listSanPham = [
     mauSac: ["blue"],
     soLuong: 210,
     moTa: "Huawei MatePad T10 là một chiếc máy tính bảng có hiệu năng mạnh mẽ, màn hình lớn, đa năng với các tính năng bảo vệ người dùng, một lựa chọn thú vị với những người muốn tìm kiếm một chiếc máy tính bảng giá mềm dành cho gia đình.",
-    hinhAnh: {
-      blue: require("../assets/huawei-matepad-t10-blue.jpg"),
-    },
+    hinhAnh: [require("../assets/huawei-matepad-t10-blue.jpg")],
     hangSanXuat: "Huawei",
   },
   {
@@ -342,10 +336,10 @@ listSanPham = [
     mauSac: ["gray", "white"],
     soLuong: 1200,
     moTa: "Samsung Galaxy Tab S8 ra mắt và vẫn giữ được đặc trưng của dòng máy tính bảng Galaxy Tab S với cấu hình mạnh mẽ, màn hình hiển thị ổn cùng khả năng hỗ trợ bút S Pen hỗ trợ học tập làm việc tốt hơn.",
-    hinhAnh: {
-      gray: require("../assets/samsung-galaxy-tab-s8-gray.jpg"),
-      white: require("../assets/samsung-galaxy-tab-s8-white.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/samsung-galaxy-tab-s8-gray.jpg"),
+      require("../assets/samsung-galaxy-tab-s8-white.jpg"),
+    ],
     hangSanXuat: "Sam Sung",
   },
   {
@@ -358,10 +352,10 @@ listSanPham = [
     mauSac: ["gray", "sliver"],
     soLuong: 211,
     moTa: "Máy tính bảng Samsung Galaxy Tab A7 Lite là phiên bản rút gọn của dòng tablet ăn khách Galaxy Tab A7 thuộc thương hiệu Samsung, đáp ứng nhu cầu giải trí của khách hàng thuộc phân khúc bình dân với màn hình lớn nhưng vẫn gọn nhẹ hợp túi tiền.",
-    hinhAnh: {
-      gray: require("../assets/samsung-galaxy-tab-a7-lite-gray.jpg"),
-      silver: require("../assets/samsung-galaxy-tab-a7-lite-silver.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/samsung-galaxy-tab-a7-lite-gray.jpg"),
+      require("../assets/samsung-galaxy-tab-a7-lite-silver.jpg"),
+    ],
     hangSanXuat: "Sam Sung",
   },
   {
@@ -374,9 +368,7 @@ listSanPham = [
     mauSac: ["gray"],
     soLuong: 120,
     moTa: "Máy tính bảng iPad Pro M1 11 inch WiFi Cellular 1TB (2021) thiết kế hình hộp vát cạnh vuông vức, hiện đại với thân máy bằng kim loại chắc chắn, hoàn thiện tỉ mỉ và sang trọng, trọng lượng nhẹ, kích cỡ hợp lý thuận tiện sử dụng và mang theo.",
-    hinhAnh: {
-      gray: require("../assets/ipad-pro-m1-11-inch-wifi-cellular-gray.jpg"),
-    },
+    hinhAnh: [require("../assets/ipad-pro-m1-11-inch-wifi-cellular-gray.jpg")],
     hangSanXuat: "Apple",
   },
   {
@@ -389,10 +381,10 @@ listSanPham = [
     mauSac: ["gray", "silver"],
     soLuong: 45,
     moTa: "Apple đang ngày càng bỏ xa nhiều đối thủ về mặt hiệu năng trên các dòng tablet, điều này được minh chứng cụ thể bằng sự xuất hiện của con chip Apple M2 siêu mạnh mẽ trên iPad Pro M2 12.9 inch WiFi Cellular 128GB. Bên cạnh đó thì máy còn có những nâng cấp như hệ điều hành iPadOS 16, viên pin 40.88 Wh.",
-    hinhAnh: {
-      gray: require("../assets/ipad-pro-m2-5g-gray.jpg"),
-      silver: require("../assets/ipad-pro-m2-5g-sliver.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/ipad-pro-m2-5g-gray.jpg"),
+      require("../assets/ipad-pro-m2-5g-sliver.jpg"),
+    ],
     hangSanXuat: "Apple",
   },
   {
@@ -405,10 +397,10 @@ listSanPham = [
     mauSac: ["gray", "silver"],
     soLuong: 210,
     moTa: "iPad Pro M2 12.9 inch WiFi 128GB là mẫu tablet mới nhất được nhà Apple phát hành vào tháng 10/2022. Thiết bị được coi là tâm điểm của giới công nghệ tại thời điểm ra mắt khi được trang bị con chip Apple M2 mạnh mẽ, bên cạnh đó sẽ là những ưu điểm khác vượt trội như: hệ điều hành iPadOS 16, quay video 4K với tốc độ khung hình 60 FPS, tần số quét 120 Hz.",
-    hinhAnh: {
-      gray: require("../assets/ipad-pro-m2-wifi-gray.jpg"),
-      silver: require("../assets/ipad-pro-m2-wifi-silver.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/ipad-pro-m2-wifi-gray.jpg"),
+      require("../assets/ipad-pro-m2-wifi-silver.jpg"),
+    ],
     hangSanXuat: "Apple",
   },
   {
@@ -421,10 +413,10 @@ listSanPham = [
     mauSac: ["gray", "silver"],
     soLuong: 211,
     moTa: "iPad Pro M1 12.9 inch Wifi 128GB (2021) mang một hiệu năng đỉnh cao đến từ vi xử lý Apple M1 và màn hình Liquid Retina XDR tiên tiến cho chất lượng hiển thị đột phá. Apple một lần nữa đưa iPad Pro vượt khỏi giới hạn của một chiếc máy tính bảng",
-    hinhAnh: {
-      gray: require("../assets/ipad-pro-m1-129-inch-wifi-gray.jpg"),
-      silver: require("../assets/ipad-pro-m1-129-inch-wifi-128gb-2021-silver.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/ipad-pro-m1-129-inch-wifi-gray.jpg"),
+      require("../assets/ipad-pro-m1-129-inch-wifi-128gb-2021-silver.jpg"),
+    ],
     hangSanXuat: "Apple",
   },
   {
@@ -437,10 +429,10 @@ listSanPham = [
     mauSac: ["pink", "purple"],
     soLuong: 150,
     moTa: "So với chiếc iPad Air 5 M1 Wifi 64GB thì chiếc iPad Air 5 M1 Wifi Cellular 64GB đã có một điểm khác biệt đáng kể đó là phương thức kết nối khi bạn vừa có thể sử dụng Wifi và vừa sử dụng mạng di động một cách bình thường nhưng vẫn cho một trải nghiệm rất tuyệt vời.",
-    hinhAnh: {
-      pink: require("../assets/ipad-air-5-m1-wifi-cellular-pink.jpg"),
-      purple: require("../assets/ipad-air-5-m1-wifi-cellular-purple.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/ipad-air-5-m1-wifi-cellular-pink.jpg"),
+      require("../assets/ipad-air-5-m1-wifi-cellular-purple.jpg"),
+    ],
     hangSanXuat: "Apple",
   },
   {
@@ -453,9 +445,7 @@ listSanPham = [
     mauSac: ["white"],
     soLuong: 345,
     moTa: "Về phần thiết kế, nhà Apple vẫn giữ nguyên kiểu dáng quen thuộc của những phiên bản tiền nhiệm trước đó như: Thiết kế gọn nhẹ, đường bo góc tinh tế, gam màu trắng trang nhã bao bọc trọn vẹn tai nghe và hộp sạc.",
-    hinhAnh: {
-      white: require("../assets/airpods-pro-2nd-generation-white.jpg"),
-    },
+    hinhAnh: [require("../assets/airpods-pro-2nd-generation-white.jpg")],
     hangSanXuat: "Apple",
   },
   {
@@ -468,10 +458,10 @@ listSanPham = [
     mauSac: ["white", "gray"],
     soLuong: 78,
     moTa: "Tai nghe Bluetooth TWS OPPO ENCO Air 2 Pro ETE21 là chiếc tai nghe mới được ra mắt của nhà OPPO vào tháng 8/2022, chỉ vài tháng sau khi phiên bản tiền nhiệm của nó là OPPO ENCO Air 2 ra đời. Đến với phiên bản Pro này, nhà OPPO đã có vài nâng cấp mà mình rất thích. Vậy những điểm thu hút đó là gì?",
-    hinhAnh: {
-      white: require("../assets/bluetooth-true-wireless-oppo-enco-air-2-pro-ete-white.jpg"),
-      gray: require("../assets/bluetooth-true-wireless-oppo-enco-air-2-pro-ete21-gray.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/bluetooth-true-wireless-oppo-enco-air-2-pro-ete-white.jpg"),
+      require("../assets/bluetooth-true-wireless-oppo-enco-air-2-pro-ete21-gray.jpg"),
+    ],
     hangSanXuat: "Oppo",
   },
   {
@@ -484,9 +474,9 @@ listSanPham = [
     mauSac: ["white"],
     soLuong: 21,
     moTa: "Tai nghe Bluetooth AirPods 2 Apple MV7N2 - được mệnh danh là một chiếc AirPods huyền thoại quốc dân rất được lòng của các fan nhà táo. Sau thành công vang dội của AirPods đời đầu thì phiên bản đời thứ 2 này của nhà Apple có gì cải tiến để có thể vượt qua người tiền nhiệm và cho tới thời điểm hiện tại vẫn còn nhận được nhiều sự ưa chuộng với các bạn trẻ đến vậy?",
-    hinhAnh: {
-      white: require("../assets/bluetooth-airpods-2-apple-mv7n2-imei-white.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/bluetooth-airpods-2-apple-mv7n2-imei-white.jpg"),
+    ],
     hangSanXuat: "Apple",
   },
   {
@@ -499,9 +489,9 @@ listSanPham = [
     mauSac: ["white"],
     soLuong: 111,
     moTa: "Tai nghe Bluetooth AirPods Pro MagSafe Charge Apple MLWK3 trắng được chế tác với vẻ ngoài tinh giản, gam màu trắng trẻ trung, sáng đẹp, phối hợp tuyệt vời với mọi trang phục từ đời thường đến công sở, dự tiệc của bạn.",
-    hinhAnh: {
-      white: require("../assets/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-white.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/bluetooth-airpods-pro-magsafe-charge-apple-mlwk3-white.jpg"),
+    ],
     hangSanXuat: "Apple",
   },
   {
@@ -514,9 +504,9 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Bề mặt của hộp đựng tai nghe Bluetooth True Wireless Mozard Air 3 đen được làm hơi nhám giúp dễ dàng cầm nắm khi tay dính nước hay đổ mồ hôi. Hộp đựng có kích thước vừa phải có thể dễ dàng mang theo khi tập thể dục, đi cà phê, du lịch,...",
-    hinhAnh: {
-      black: require("../assets/tai-nghe-bluetooth-true-wireless-mozard-air-3-black.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/tai-nghe-bluetooth-true-wireless-mozard-air-3-black.jpg"),
+    ],
     hangSanXuat: "Mozard",
   },
   {
@@ -529,10 +519,10 @@ listSanPham = [
     mauSac: ["white", "black"],
     soLuong: 12,
     moTa: "Sở hữu thiết kế thời thượng, đẹp mắt, trang bị nhiều công nghệ hiện đại cả về âm thanh lẫn kết nối, chiếc tai nghe Bluetooth True Wireless Realme Buds T100 hứa hẹn sẽ cùng bạn tạo nên những trải nghiệm tuyệt vời trong cuộc sống.",
-    hinhAnh: {
-      white: require("../assets/tai-nghe-bluetooth-tws-realme-buds-t100-white.jpg"),
-      black: require("../assets/tai-nghe-bluetooth-tws-realme-buds-t100-black.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/tai-nghe-bluetooth-tws-realme-buds-t100-white.jpg"),
+      require("../assets/tai-nghe-bluetooth-tws-realme-buds-t100-black.jpg"),
+    ],
     hangSanXuat: "Realme",
   },
   {
@@ -545,9 +535,9 @@ listSanPham = [
     mauSac: ["white"],
     soLuong: 211,
     moTa: "Tháng 08/2022, nhà Samsung cho ra mắt sản phẩm mới là tai nghe Bluetooth True Wireless Samsung Galaxy Buds 2 Pro R510N. Đây là phiên bản kế nhiệm của chiếc tai nghe Samsung Galaxy Buds Pro (ra mắt vào tháng 01/2021). Sản phẩm mới này hứa hẹn sẽ bổ sung nhiều tính năng hấp dẫn cho người dùng.",
-    hinhAnh: {
-      white: require("../assets/bluetooth-airpods-2-apple-mv7n2-imei-white.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/bluetooth-airpods-2-apple-mv7n2-imei-white.jpg"),
+    ],
     hangSanXuat: "Sam Sung",
   },
   {
@@ -560,10 +550,10 @@ listSanPham = [
     mauSac: ["white", "blue"],
     soLuong: 2,
     moTa: "Tai nghe Bluetooth True Wireless Mozard Q8 với 2 phiên bản màu xanh navy và trắng bạc sang trọng, tinh tế, dễ lựa chọn",
-    hinhAnh: {
-      white: require("../assets/bluetooth-true-wireless-mozard-q8-white.jpg"),
-      blue: require("../assets/bluetooth-true-wireless-mozard-q8-blue.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/bluetooth-true-wireless-mozard-q8-white.jpg"),
+      require("../assets/bluetooth-true-wireless-mozard-q8-blue.jpg"),
+    ],
     hangSanXuat: "Mozard",
   },
   {
@@ -576,10 +566,10 @@ listSanPham = [
     mauSac: ["pink", "white"],
     soLuong: 1,
     moTa: "Thiết kế housing tinh xảo, đồng màu với hộp sạc trong 2 phiên bản là màu hồng ngọt ngào và màu trắng trang nhã, phù hợp với cả phái mạnh và phái đẹp. Housing được chế tác với tay cầm dài cho bạn dễ cầm và đeo vào tai, hạn chế trượt tay, rơi rớt khi thao tác.",
-    hinhAnh: {
-      pink: require("../assets/bluetooth-true-wireless-rezo-f15-pink.jpeg"),
-      white: require("../assets/bluetooth-true-wireless-rezo-f15-white.jpeg"),
-    },
+    hinhAnh: [
+      require("../assets/bluetooth-true-wireless-rezo-f15-pink.jpeg"),
+      require("../assets/bluetooth-true-wireless-rezo-f15-white.jpeg"),
+    ],
     hangSanXuat: "Rezo",
   },
   {
@@ -592,9 +582,7 @@ listSanPham = [
     mauSac: ["white"],
     soLuong: 112,
     moTa: "Airpods 3 có thiết kế tương tự như AirPods Pro nhưng không còn phần eartips, đường viền và thân ngắn hơn cho âm thanh truyền tải đến tai tối ưu. Bề mặt tai nghe Bluetooth Apple phủ sắc trắng thời thượng, được làm từ các vật liệu tái chế với độ bền cao, bảo vệ môi trường sống của con người.",
-    hinhAnh: {
-      white: require("../assets/airpods-3-mme73-white.jpg"),
-    },
+    hinhAnh: [require("../assets/airpods-3-mme73-white.jpg")],
     hangSanXuat: "Apple",
   },
   {
@@ -607,10 +595,10 @@ listSanPham = [
     mauSac: ["white", "black"],
     soLuong: 2,
     moTa: "Tai nghe Bluetooth True Wireless VIVO Air XEW25 không chỉ sở hữu vẻ ngoài thời thượng, phong cách mà còn được trang bị nhiều công nghệ hiện đại,... Đây hẳn sẽ là một món phụ kiện đáng đầu tư.",
-    hinhAnh: {
-      white: require("../assets/tai-nghe-bluetooth-true-wireless-vivo-air-xew25-white.jpg"),
-      black: require("../assets/tai-nghe-bluetooth-true-wireless-vivo-air-xew25-black.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/tai-nghe-bluetooth-true-wireless-vivo-air-xew25-white.jpg"),
+      require("../assets/tai-nghe-bluetooth-true-wireless-vivo-air-xew25-black.jpg"),
+    ],
     hangSanXuat: "Vivo",
   },
   {
@@ -623,9 +611,9 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 10,
     moTa: "Thiết kế pin sạc dự phòng Anker nhỏ gọn, cầm vừa tay. Kích cỡ chỉ lớn hơn thẻ ATM của bạn một chút nên tạo cảm thấy rất thoải mái khi cầm nắm, di chuyển. ",
-    hinhAnh: {
-      black: require("../assets/sac-du-phong-10000mah-anker-powercore-select-a1223-black.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/sac-du-phong-10000mah-anker-powercore-select-a1223-black.jpg"),
+    ],
     hangSanXuat: "Anker",
   },
   {
@@ -638,10 +626,10 @@ listSanPham = [
     mauSac: ["pink", "gray"],
     soLuong: 1,
     moTa: "AVA+ PJ JP192 sẽ là nguồn trữ năng lượng tốt cho điện thoại, tablet, tai nghe Bluetooth của bạn với hiệu suất sạc cao 64%, thời gian sạc đầy nhanh, an toàn cho các thiết bị kết nối.",
-    hinhAnh: {
-      pink: require("../assets/ava-pj-jp192-pink.jpg"),
-      gray: require("../assets/ava-pj-jp192-gray.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/ava-pj-jp192-pink.jpg"),
+      require("../assets/ava-pj-jp192-gray.jpg"),
+    ],
     hangSanXuat: "AVA+",
   },
   {
@@ -654,10 +642,10 @@ listSanPham = [
     mauSac: ["blue", "black"],
     soLuong: 100,
     moTa: "Lớp vải Fabric phủ ngoài pin sạc dự phòng Polymer 20.000mAh Type C PD QC3.0 Xmobile PowerBox P69D đen tạo điểm nhấn sang trọng cho sản phẩm. Bên cạnh đó nó còn có tác dụng chống xước, chống bám vân tay, giữ cho sạc dự phòng luôn mới đẹp. Thiết kế cầm nắm gọn gàng, cất vào túi xách, tiện mang theo.",
-    hinhAnh: {
-      blue: require("../assets/sac-du-phong-polymer-20000mah-type-c-xmobile-p69d-blue.jpg"),
-      black: require("../assets/sac-du-phong-polymer-20000mah-type-c-xmobile-p69d-black.jpeg"),
-    },
+    hinhAnh: [
+      require("../assets/sac-du-phong-polymer-20000mah-type-c-xmobile-p69d-blue.jpg"),
+      require("../assets/sac-du-phong-polymer-20000mah-type-c-xmobile-p69d-black.jpeg"),
+    ],
     hangSanXuat: "XMobile",
   },
   {
@@ -670,9 +658,9 @@ listSanPham = [
     mauSac: ["gray"],
     soLuong: 211,
     moTa: "Pin sạc dự phòng Polymer 20000mAh Type C PD QC3.0 Xmobile PowerBox+ JP218 hỗ trợ sạc nhanh tiện lợi, dung lượng pin lớn cho phép sạc nhiều lần,... Đây sẽ là món phụ kiện đáng sở hữu nếu bạn vẫn đang lo lắng vấn đề pin sạc.",
-    hinhAnh: {
-      gray: require("../assets/sac-phong-polymer-20000mah-type-c-pd-qc3-0-20w-xmobile-powerbox-jp218-gray.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/sac-phong-polymer-20000mah-type-c-pd-qc3-0-20w-xmobile-powerbox-jp218-gray.jpg"),
+    ],
     hangSanXuat: "XMobile",
   },
   {
@@ -685,10 +673,10 @@ listSanPham = [
     mauSac: ["white", "black"],
     soLuong: 11,
     moTa: "Nguồn tích trữ năng lượng dồi dào cho bạn hoàn toàn yên tâm khi khám phá các vùng đất mới hoặc công tác ở những nơi thiếu nguồn điện, sạc dự phòng sẽ luôn đảm bảo điện thoại có đủ năng lượng để bạn xử lý công việc, chụp ảnh, quay video khi cần.",
-    hinhAnh: {
-      white: require("../assets/pin-polymer-10000mah-type-c-ava-ds2107-white.jpg"),
-      black: require("../assets/pin-polymer-10000mah-type-c-ava-ds2107-black.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/pin-polymer-10000mah-type-c-ava-ds2107-white.jpg"),
+      require("../assets/pin-polymer-10000mah-type-c-ava-ds2107-black.jpg"),
+    ],
     hangSanXuat: "AVA+",
   },
   {
@@ -701,10 +689,10 @@ listSanPham = [
     mauSac: ["white", "black"],
     soLuong: 211,
     moTa: "Pin sạc dự phòng Polymer 5000mAh Không dây Magnetic Type C Anker MagGo A1611 sở hữu ngoại hình đẹp mắt, khối lượng gọn nhẹ, tích hợp sạc không dây tiện lợi,...",
-    hinhAnh: {
-      white: require("../assets/sac-du-phong-polymer-5000mah-magnetic-type-c-anker-maggo-a1611-white.jpg"),
-      black: require("../assets/sac-du-phong-polymer-5000mah-magnetic-type-c-anker-maggo-a1611-black.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/sac-du-phong-polymer-5000mah-magnetic-type-c-anker-maggo-a1611-white.jpg"),
+      require("../assets/sac-du-phong-polymer-5000mah-magnetic-type-c-anker-maggo-a1611-black.jpg"),
+    ],
     hangSanXuat: "Anker",
   },
   {
@@ -717,9 +705,9 @@ listSanPham = [
     mauSac: ["white"],
     soLuong: 211,
     moTa: "Pin sạc dự phòng Polymer 10.000mAh Lightning eValu PJ JP189SL với kích thước không quá lớn so với chiếc smartphone của bạn, trọng lượng chỉ 197 g rất gọn gàng để đặt trong túi xách, balo hoặc cả túi quần jeans của bạn.",
-    hinhAnh: {
-      white: require("../assets/sac-du-phong-10000mah-lightning-evalu-pj-jp189sl-white.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/sac-du-phong-10000mah-lightning-evalu-pj-jp189sl-white.jpg"),
+    ],
     hangSanXuat: "eValu",
   },
   {
@@ -732,10 +720,10 @@ listSanPham = [
     mauSac: ["green", "black"],
     soLuong: 211,
     moTa: "AVA+ JP208 sạc lại nhiều lần cho các thiết bị di động với dung lượng 10.000 mAh, hiệu suất sạc 64%",
-    hinhAnh: {
-      green: require("../assets/pin-polymer-10000mah-ava-jp208-green.jpeg"),
-      black: require("../assets/pin-polymer-10000mah-ava-jp208-black.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/pin-polymer-10000mah-ava-jp208-green.jpeg"),
+      require("../assets/pin-polymer-10000mah-ava-jp208-black.jpg"),
+    ],
     hangSanXuat: "AVA+",
   },
   {
@@ -748,9 +736,9 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 201,
     moTa: "Pin sạc dự phòng Polymer 15.000 mAh Type C PD QC3.0 Xmobile PowerBox P72D Đen sở hữu kiểu dáng tinh tế, gam màu đen thanh lịch, bề mặt phủ Fabric hạn chế trầy xước, tăng tính thẩm mỹ.",
-    hinhAnh: {
-      black: require("../assets/pin-polymer-15000-mah-type-c-pd-qc30-xmobile-powerbox-p72d-black.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/pin-polymer-15000-mah-type-c-pd-qc30-xmobile-powerbox-p72d-black.jpg"),
+    ],
     hangSanXuat: "XMobile",
   },
   {
@@ -763,9 +751,9 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Khi nhắc đến thiết kế của những viên pin sạc dự phòng không dây thì mình sẽ nghĩ đến hai từ cồng kềnh và hầm hố đầu tiên. Thế nhưng đối với Xmobile PowerLite P181P lại khác, mặc dù thiết bị của chúng ta cũng tích hợp công nghệ sạc không dây nhưng về kích thước tổng thể của nó lại rất nhỏ gọn.",
-    hinhAnh: {
-      black: require("../assets/pin-polymer-10000mah-khong-day-magnetic-type-c-qc30-xmobile-powerlite-p181p-black.jpg"),
-    },
+    hinhAnh: [
+      require("../assets/pin-polymer-10000mah-khong-day-magnetic-type-c-qc30-xmobile-powerlite-p181p-black.jpg"),
+    ],
     hangSanXuat: "XMobile",
   },
 
@@ -779,9 +767,7 @@ listSanPham = [
     mauSac: ["blue"],
     soLuong: 212,
     moTa: "Điện thoại Samsung Galaxy A73 5G với tuyên ngôn “Rực nét nguyên bản” sẽ phù hợp với mọi đối tượng người sử dụng bởi sự hoàn thiện từ thiết kế bên ngoài cho đến phần cứng mạnh mẽ bên trong.",
-    hinhAnh: {
-      black: require("../assets/1.png"),
-    },
+    hinhAnh: [require("../assets/1.png")],
     Samsung: "XMobile",
   },
   {
@@ -794,9 +780,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 991,
     moTa: "Tất cả Apple Watch chính hãng VN/A được phân phối tại Hoàng Hà Mobile đều được nhập trực tiếp từ Công ty TNHH Apple Việt Nam thông qua các nhà phân phối ủy quyền        ",
-    hinhAnh: {
-      black: require("../assets/2.png"),
-    },
+    hinhAnh: [require("../assets/2.png")],
     hangSanXuat: "Apple",
   },
   {
@@ -809,9 +793,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Dung lượng pin: Chế độ Đồng Hồ Thông Minh: Lên đến 28 ngày + 9 ngày *, Chế độ Đồng Hồ Tiết Kiệm Pin: Lên đến 90 ngày + hơn 1 năm *, Chế độ GPS: Lên đến 89 giờ + 33 giờ **, Tất cả Hệ Thống Vệ Tinh: Lên đến 63 giờ + 14 giờ *, Tất cả Hệ Thống Vệ Tinh và Đa Băng Tần: Lên đến 38 giờ + 4 giờ **",
-    hinhAnh: {
-      black: require("../assets/3.png"),
-    },
+    hinhAnh: [require("../assets/3.png")],
     hangSanXuat: "Garmin",
   },
   {
@@ -824,9 +806,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 2131,
     moTa: "Đồng hồ thông minh",
-    hinhAnh: {
-      black: require("../assets/4.png"),
-    },
+    hinhAnh: [require("../assets/4.png")],
     hangSanXuat: "Garmin",
   },
   {
@@ -839,9 +819,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Đồng hồ thông minh",
-    hinhAnh: {
-      black: require("../assets/5.png"),
-    },
+    hinhAnh: [require("../assets/5.png")],
     hangSanXuat: "Garmin",
   },
   {
@@ -854,9 +832,7 @@ listSanPham = [
     mauSac: ["pink"],
     soLuong: 211,
     moTa: "Đồng hồ thông minh",
-    hinhAnh: {
-      black: require("../assets/6.png"),
-    },
+    hinhAnh: [require("../assets/6.png")],
     hangSanXuat: "Fitbit",
   },
   {
@@ -869,9 +845,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Dây đeo đo nhịp tim cao cấp này truyền dữ liệu nhịp tim theo thời gian thực qua kết nối ANT + ®️ và công nghệ BLUETOOTH®️",
-    hinhAnh: {
-      black: require("../assets/7.png"),
-    },
+    hinhAnh: [require("../assets/7.png")],
     hangSanXuat: "Garmin",
   },
   {
@@ -884,9 +858,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Đối với cha mẹ, không có gì hạnh phúc hơn việc nhìn thấy con cái của mình lớn lên khỏe mạnh từng ngày. Và để đảm bảo an toàn cho trẻ nhỏ ngay cả khi ở xa",
-    hinhAnh: {
-      black: require("../assets/8.png"),
-    },
+    hinhAnh: [require("../assets/8.png")],
     hangSanXuat: "myAlo",
   },
   {
@@ -899,9 +871,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Huawei Watch Fit 2 Classic phiên bản dây da là thiết bị đồng hồ thông minh lý tưởng nếu bạn đang tìm kiếm sản phẩm với thiết kế trẻ trun",
-    hinhAnh: {
-      black: require("../assets/9.png"),
-    },
+    hinhAnh: [require("../assets/9.png")],
     hangSanXuat: "Huawei",
   },
   {
@@ -914,9 +884,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Hiện nay, đồng hồ thông minh cho trẻ em trở nên khá phổ biến. Và dòng đồng hồ Huawei Watch Kids 4 Pro là một trong số đó",
-    hinhAnh: {
-      black: require("../assets/10.png"),
-    },
+    hinhAnh: [require("../assets/10.png")],
     hangSanXuat: "Huawei",
   },
   {
@@ -929,9 +897,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Masstel Dream Action là sản phẩm đồng hồ thông minh cao cấp nhất tới từ nhà sản xuất Masstel. Với thiết kế sang trọng và nhiều tính năng hữu ích",
-    hinhAnh: {
-      black: require("../assets/11.png"),
-    },
+    hinhAnh: [require("../assets/11.png")],
     hangSanXuat: "Masstel",
   },
   {
@@ -944,9 +910,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Đồng hồ thông minh Masstel Smart Hero 10 4G là chiếc đồng hồ được nhiều phụ huynh tin tưởng để dành tặng các bé yêu nhà mình. ",
-    hinhAnh: {
-      black: require("../assets/12.png"),
-    },
+    hinhAnh: [require("../assets/12.png")],
     hangSanXuat: "Masstel",
   },
   {
@@ -959,9 +923,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Đồng hồ thông minh là một món phụ kiện vô cùng được ưa chuộng trên thị trường hiện nay. Cùng chúng mình khám phá chiếc đồng hồ thông minh đang hot hit trên thị trường hiện nay - Amazfit Bip 3 Pro nhé!",
-    hinhAnh: {
-      black: require("../assets/13.png"),
-    },
+    hinhAnh: [require("../assets/13.png")],
     hangSanXuat: "Amazfit",
   },
   {
@@ -974,9 +936,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Nằm trong số những chiếc đồng hồ thông minh giá có giá rẻ, Xiaomi Mi Watch Lite là một chiếc smartwatch có đẹp mắt với hoàn thiện chất lượng cao và nhiều tính năng thông minh.",
-    hinhAnh: {
-      black: require("../assets/14.png"),
-    },
+    hinhAnh: [require("../assets/14.png")],
     hangSanXuat: "Xiaomi",
   },
   ,
@@ -990,9 +950,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Dimensions (mm) 46.6 x 51.8 x 12.9 Colors Midnight, Glacier",
-    hinhAnh: {
-      black: require("../assets/15.png"),
-    },
+    hinhAnh: [require("../assets/15.png")],
     hangSanXuat: "Google",
   },
   ,
@@ -1006,9 +964,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Dimensions (mm) 46.6 x 51.8 x 12.9 Colors Midnight, Glacier",
-    hinhAnh: {
-      black: require("../assets/16.png"),
-    },
+    hinhAnh: [require("../assets/16.png")],
     hangSanXuat: "Google",
   },
   ,
@@ -1022,9 +978,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Realme là thương hiệu sản xuất smartphone hướng đến phân khúc giá rẻ. Những năm gần đây, Realme bắt đầu mở rộng các lĩnh vực sản xuất của mình",
-    hinhAnh: {
-      black: require("../assets/17.png"),
-    },
+    hinhAnh: [require("../assets/17.png")],
     hangSanXuat: "realme",
   },
   ,
@@ -1038,9 +992,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Realme là thương hiệu không còn xa lạ với người dùng tại thị trường Việt Nam. Bên cạnh smartphone, Realme cũng giới thiệu đến người dùng những thiết bị đeo tay thông minh",
-    hinhAnh: {
-      black: require("../assets/18.png"),
-    },
+    hinhAnh: [require("../assets/18.png")],
     hangSanXuat: "Realme",
   },
   ,
@@ -1054,9 +1006,7 @@ listSanPham = [
     mauSac: ["black"],
     soLuong: 211,
     moTa: "Khám phá ngay chiếc đồng hồ thông minh SoundPEATS Watch 2 đang được nhiều người dùng săn đón trên thị trường hiện nay dưới đây nhé!",
-    hinhAnh: {
-      black: require("../assets/19.png"),
-    },
+    hinhAnh: [require("../assets/19.png")],
     hangSanXuat: "SoundPEATS",
   },
 ];

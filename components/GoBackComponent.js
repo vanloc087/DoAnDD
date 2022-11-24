@@ -3,7 +3,7 @@ import React from "react";
 import MaterialIcons from "react-native-vector-icons/AntDesign";
 import { useNavigation } from "@react-navigation/native";
 
-const GoBackComponent = ({title}) => {
+const GoBackComponent = ({ title, icon }) => {
   const navigation = useNavigation();
   return (
     <View style={styles.goBackComponent}>
@@ -17,6 +17,19 @@ const GoBackComponent = ({title}) => {
         <MaterialIcons
           style={styles.icon}
           name="left"
+          size={25}
+          color={"white"}
+        />
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate("Cart");
+        }}
+      >
+        <MaterialIcons
+          style={{ marginRight: 20 }}
+          name={icon}
           size={25}
           color={"white"}
         />
@@ -35,6 +48,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     alignItems: "center",
     flexDirection: "row",
+    justifyContent: "space-between",
   },
 
   icon: {

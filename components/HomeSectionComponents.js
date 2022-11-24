@@ -9,37 +9,31 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { useState, useEffect } from "react";
+import { useNavigation } from "@react-navigation/native";
+import "intl";
+import "intl/locale-data/jsonp/vi";
 
+const currencyFormatter = new Intl.NumberFormat("vi-VN", {
+  style: "currency",
+  currency: "VND",
+});
 const { width } = Dimensions.get("window");
-const item_image_1 = require("../assets/item_image_1.png");
-const item_image_2 = require("../assets/item_image_2.png");
-const item_image_3 = require("../assets/item_image_3.png");
-const item_image_4 = require("../assets/item_image_4.png");
 const ProductItem = ({ image, name, price, discount }) => (
   <View style={styles.itemContainer}>
     <Image source={image} style={styles.itemImage} />
     <Text style={styles.itemName} numberOfLines={2}>
       {name}
     </Text>
-    <Text style={styles.itemPrice}>{price}</Text>
-    <Text style={styles.itemDiscount}>{discount}</Text>
+    <Text style={styles.itemPrice}> {currencyFormatter.format(price)}</Text>
+    <Text style={styles.itemDiscount}>
+      {" "}
+      {currencyFormatter.format(discount)}
+    </Text>
   </View>
 );
 
 const HomeSectionComponent = (props) => {
-  const [clickBtn1, setClickBtn1] = useState(true);
-  const [clickBtn2, setClickBtn2] = useState(false);
-  const [clickBtn3, setClickBtn3] = useState(false);
-  const [clickBtn4, setClickBtn4] = useState(false);
-  const [data, setData] = useState([]);
-
-  const handelFilterData = (type) => {
-    if (type === 3) {
-      setData(listData);
-    } else {
-      setData(listData.filter((x) => x.type === type));
-    }
-  };
+  const navigation = useNavigation();
 
   return (
     <View style={styles.sectionContainer}>
@@ -48,122 +42,20 @@ const HomeSectionComponent = (props) => {
       {/*  */}
       <Image source={props.banner} style={styles.sectionImage} />
       {/*  */}
-      <ScrollView horizontal={true}>
-        <View style={styles.filterContainer}>
-          <View>
-            <TouchableOpacity
-              style={
-                clickBtn1 === true
-                  ? styles.filterActiveButtonContainer
-                  : styles.filterInactiveButtonContainer
-              }
-              onPress={() => {
-                setClickBtn1(true);
-                setClickBtn2(false);
-                setClickBtn3(false);
-                setClickBtn4(false);
-                // handelFilterData(3);
-              }}
-            >
-              <Text
-                style={
-                  clickBtn1 === true
-                    ? styles.filterActiveText
-                    : styles.filterInactiveText
-                }
-              >
-                Tất cả
-              </Text>
-            </TouchableOpacity>
-          </View>
-          <View>
-            <TouchableOpacity
-              style={
-                clickBtn2 === true
-                  ? styles.filterActiveButtonContainer
-                  : styles.filterInactiveButtonContainer
-              }
-              onPress={() => {
-                setClickBtn1(false);
-                setClickBtn2(true);
-                setClickBtn3(false);
-                setClickBtn4(false);
-                // handelFilterData(3);
-              }}
-            >
-              <Text
-                style={
-                  clickBtn2 === true
-                    ? styles.filterActiveText
-                    : styles.filterInactiveText
-                }
-              >
-                Điện thoại SmartPhone
-              </Text>
-            </TouchableOpacity>
-          </View>
-          <View>
-            <TouchableOpacity
-              style={
-                clickBtn3 === true
-                  ? styles.filterActiveButtonContainer
-                  : styles.filterInactiveButtonContainer
-              }
-              onPress={() => {
-                setClickBtn1(false);
-                setClickBtn2(false);
-                setClickBtn3(true);
-                setClickBtn4(false);
-                // handelFilterData(3);
-              }}
-            >
-              <Text
-                style={
-                  clickBtn3 === true
-                    ? styles.filterActiveText
-                    : styles.filterInactiveText
-                }
-              >
-                Máy tính bảng
-              </Text>
-            </TouchableOpacity>
-          </View>
-          <View>
-            <TouchableOpacity
-              style={
-                clickBtn4
-                  ? styles.filterActiveButtonContainer
-                  : styles.filterInactiveButtonContainer
-              }
-              onPress={() => {
-                setClickBtn1(false);
-                setClickBtn2(false);
-                setClickBtn3(false);
-                setClickBtn4(true);
-                // handelFilterData(3);
-              }}
-            >
-              <Text
-                style={
-                  clickBtn4 === true
-                    ? styles.filterActiveText
-                    : styles.filterInactiveText
-                }
-              >
-                Laptop
-              </Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-      </ScrollView>
+
       {/*  */}
       <ScrollView horizontal={true}>
         <View style={styles.listItemContainer}>
           {props.data.map((item) => (
-            <TouchableOpacity>
+            <TouchableOpacity
+              key={item.ten}
+              onPress={() => {
+                navigation.navigate("DetailScreen", item);
+              }}
+            >
               <ProductItem
                 name={item.ten}
-                image={item.hinhAnh.blue}
+                image={item.hinhAnh[0]}
                 price={item.giaDeXuat}
                 discount={item.giaThuc}
               />
@@ -172,7 +64,12 @@ const HomeSectionComponent = (props) => {
         </View>
       </ScrollView>
       {/*  */}
-      <TouchableOpacity style={styles.seeMoreContainer}>
+      <TouchableOpacity
+        style={styles.seeMoreContainer}
+        onPress={() => {
+          navigation.navigate("ListProduct", { data: props.loai });
+        }}
+      >
         <Text style={styles.seeMoreText}>
           XEM THÊM {props.data.length} SẢN PHẨM {">>>"}{" "}
         </Text>

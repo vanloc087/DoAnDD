@@ -5,6 +5,7 @@ import {
   Text,
   StatusBar,
   TouchableOpacity,
+  ScrollView,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
@@ -44,26 +45,36 @@ const ProfileScreen = () => {
                 navigation.navigate("LoginScreen");
               }}
             >
-              <Text style={styles.authText}>Đăng nhập/Đăng ký</Text>
+              <Text style={styles.authText}>Chào mừng vanloc</Text>
             </TouchableOpacity>
           </View>
           <FontAwesome name="angle-right" size={26} color="#1e88e5" />
         </View>
         {/*  */}
-        <View style={styles.divider} />
-        <ProfileItem icon="format-list-bulleted" name="Quản lý đơn hàng" />
-        <ProfileItem icon="cart-outline" name="Sản phẩm đã mua" />
-        <ProfileItem icon="eye-outline" name="Sản phẩm đã xem" />
-        <ProfileItem icon="heart-outline" name="Sản phẩm yêu thích" />
-        <ProfileItem icon="bookmark-outline" name="Sản phẩm mua sau" />
-        <ProfileItem icon="star-outline" name="Sản phẩm đánh giá" />
-        {/*  */}
-        <View style={styles.divider} />
-        <ProfileItem name="Ưu đãi cho chủ thẻ ngân hàng" />
-        <ProfileItem name="Cài đặt" />
-        {/*  */}
-        <View style={styles.divider} />
-        <ProfileItem icon="headphones" name="Hỗ trợ" />
+        <ScrollView style={{ width: "100%" }}>
+          <View style={styles.divider} />
+          <ProfileItem icon="format-list-bulleted" name="Quản lý đơn hàng" />
+          <ProfileItem icon="cart-outline" name="Sản phẩm đã mua" />
+          <ProfileItem icon="eye-outline" name="Sản phẩm đã xem" />
+          <ProfileItem icon="heart-outline" name="Sản phẩm yêu thích" />
+          <ProfileItem icon="bookmark-outline" name="Sản phẩm mua sau" />
+          <ProfileItem icon="star-outline" name="Sản phẩm đánh giá" />
+          {/*  */}
+          <View style={styles.divider} />
+          <ProfileItem name="Ưu đãi cho chủ thẻ ngân hàng" />
+          <ProfileItem name="Cài đặt" />
+          {/*  */}
+          <View style={styles.divider} />
+          <ProfileItem icon="headphones" name="Hỗ trợ" />
+          <View style={styles.divider} />
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate("LoginScreen");
+            }}
+          >
+            <ProfileItem icon="logout" name="Đăng xuất" />
+          </TouchableOpacity>
+        </ScrollView>
       </View>
     </View>
   );

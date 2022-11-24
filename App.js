@@ -10,10 +10,12 @@ import ProfileScreen from "./screens/ProfileScreen";
 import NotificationScreen from "./screens/NotificationScreen";
 import LoginScreen from "./screens/Login/LoginScreen";
 import RegisterScreen from "./screens/Register/RegisterScreen";
-
+import ProductInfo from "./screens/ProductInfo";
+import Cart from "./screens/Cart";
+import DetailScreen from "./screens/DetailScreen";
+import ListProduct from "./screens/ListProduct";
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
-
 const TabNavigation = () => {
   return (
     <>
@@ -36,7 +38,7 @@ const TabNavigation = () => {
         />
         <Tab.Screen
           name="Cart"
-          component={NotificationScreen}
+          component={Cart}
           options={{
             tabBarLabel: "Giỏ hàng",
             tabBarIcon: ({ color }) => (
@@ -74,13 +76,17 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="HomeScreen"
+        initialRouteName="LoginScreen"
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen name="HomeScreen" component={TabNavigation} />
         <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
         <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+        <Stack.Screen name="ProductInfo" component={ProductInfo} />
+        <Stack.Screen name="MyCart" component={Cart} />
+        <Stack.Screen name="DetailScreen" component={DetailScreen} />
+        <Stack.Screen name="ListProduct" component={ListProduct} />
       </Stack.Navigator>
     </NavigationContainer>
   );
